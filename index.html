@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+    <!-- end Fonts -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="content-container">
+        <h1 id="title">CSS Selectors Reference</h1>
+
+        <!-- Type Selectors Section -->
+        <div class="section">
+            <h2>Type, Class and ID Selectors</h2>
+            <p>This group includes selectors that target an HTML element such as an <span class="code">&lt;h1&gt;</span>. It also includes selectors which target a class, or an ID.</p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><span class="code">p {}</span>, <span class="code">a {}</span>, <span class="code">h1 {}</span>, etc</td>
+                    <td>Type/Element</td>
+                    <td>This selector targets an HTML element such as a(n) <span class="code">&lt;p&gt;</span>, <span class="code">&lt;a&gt;</span>, <span class="code">&lt;h1&gt;</span>, etc</td>
+                </tr>
+                <tr>
+                    <td><span class="code">.myClass {}</span></td>
+                    <td>Class</td>
+                    <td>This selector targets HTML elements with the class <span class="code">class="myClass"</span></td>
+                </tr>
+                <tr>
+                    <td><span class="code">#mySection {}</span></td>
+                    <td>ID</td>
+                    <td>This group targets the HTML element with the id <span class="code">id="mySection"</span></td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+
+        <!-- Attribute Selectors Section -->
+        <div class="section">
+            <h2>Attribute Selectors</h2>
+            <p>This group of selectors gives you different ways to select elements based on the presence of a certain attribute on an element.</p>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Selector</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="code">a[title] {}</span></td>
+                    <td>Attribute</td>
+                    <td>Targets HTML elements with the attribute title</td>
+                  </tr>
+                  <tr>
+                    <td><span class="code">a[href="https://example.com"] {}</span></td>
+                    <td>Attribute (href)</td>
+                    <td>Targets HTML elements with the attribute <span class="code">href="https://example.com"</span></td>
+                  </tr>
+                </tbody>
+                </table>
+        </div>
+
+        <!-- Pseudo Classes Section -->
+        <div class="section">
+            <h2>Pseudo-classes and Pseudo-elements</h2>
+            <p>This group of selectors includes pseudo-classes, which style certain states of an element. The <span class="code">:hover</span> pseudo-class for example selects an element only when it is being hovered over by the mouse pointer</p>
+            <p>It also includes pseudo-elements, which select a certain part of an element rather than the element itself. For example, <span class="code">::first-line</span> always selects the first line of text inside an element (a <span class="code">&lt;p&gt;</span> in the below case), acting as if a <span class="code">&lt;span&gt;</span> was wrapped around the first formatted line and then selected.</p>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Selector</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="code">a:hover {}</span></td>
+                    <td>Pseudo-class</td>
+                    <td>Targets HTML <span class="code">&lt;a&gt;</span> elements when the mouse hovers over them</td>
+                  </tr>
+                  <tr>
+                    <td><span class="code">p::first-letter {}</span></td>
+                    <td>Pseudo-element</td>
+                    <td>Targets HTML <span class="code">&lt;p&gt;</span>elements, formatting the first letter of the element</td>
+                  </tr>
+                </tbody>
+                </table>
+        </div>
+
+        <!-- Combinators Section -->
+        <div class="section">
+            <h2>Combinators</h2>
+            <p>The final group of selectors combine other selectors in order to target elements within our documents. The following, for example, selects paragraphs that are direct children of <span class="code">&lt;article&gt;</span> elements using the child combinator (>). For this specific case, however, it's more common to see a blank space between the parent and child elements. For example, <span class="code">article p {}</span>.</p>
+        </div>
+
+        <!-- Summary -->
+        <div id="summary">
+            <h2>Summary</h2>
+            <p>In this article we've introduced CSS selectors, which enable you to target particular HTML elements.</p>
+            <p>For a complete list of selectors, see the MDN's <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">CSS selectors reference</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
